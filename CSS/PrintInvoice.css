@@ -1,0 +1,106 @@
+﻿body
+{
+    margin: 25px;
+    padding: 0px;
+    font-family: Georgia,Verdana, Helvetica, sans-serif;
+}
+
+.image
+{
+    position: relative;
+    float:right;
+}
+.image .text
+{
+    position: absolute;
+    top: -2px;
+    text-align:right;
+    font-weight:bold;
+    float:left;
+}
+
+Div.DivOuter
+{
+    height:270mm;
+    width: 200mm;
+    border: 1px solid #CCCCCC;
+}
+
+Div.DivOuter .DivTopMe
+{
+    width: 200mm;
+    height: 140px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+Div.DivOuter .DivTop
+{
+    width: 207mm;
+    height: 30mm;
+    margin: 5px;
+}
+
+Div.DivOuter .DivMid
+{
+    float: left;
+    width: 191mm;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+div.Statement
+{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+div.Cash-Credit
+{
+    font-weight: bolder;
+    text-align: left;
+    font-size: 14pt;
+    margin: 10px 0px 20px 0px;
+}
+
+div.aSing
+{
+    text-align: right;
+    font-size: 9pt;
+    font-weight:bolder;
+    margin: 30px 10px 10px 0px;
+}
+span
+{
+    margin: 2px;
+    font-family: Georgia;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+.spanNum
+{
+    margin: 2px;
+    font-family: Garamond;
+    font-size: 13pt;
+    padding: 3px;
+}
+
+.clear
+{
+    float: none;
+}
+
+td, th
+{
+    padding: 4px;
+    font-size: 11pt;
+}
+
+td
+{
+    border-bottom:0px;
+    border-top:0px;
+    padding: 5px;
+}

@@ -1,0 +1,51 @@
+div.MaskedDiv 
+{
+	visibility: hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:verdana;
+	font-weight:bold;
+	padding:40px;
+    z-index:100;
+	background-image:url(Mask.png);
+	/* ieWin only stuff */
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='Mask.png');
+}
+
+
+div.ModalPopup {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	background-color: #CCCCCC;
+	position:absolute;
+	/* set z-index higher than possible */
+	z-index:10000;
+	visibility: hidden;
+	 color: Black;
+	border-style: solid;
+	border-color: #999999;
+	border-width: 1px;
+    width: 380px;
+    height :auto;
+}
+
+.tdRowOne
+{
+    text-align:left;
+    background-color:#003399; 
+    color :White; 
+    font-weight:bold;
+    vertical-align:top;
+}
+
+.tdRowTwo
+{
+    text-align:right;
+    background-color:#003399; 
+    color :White; 
+    font-weight:bold;
+    vertical-align:top;
+}

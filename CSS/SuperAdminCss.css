@@ -1,0 +1,291 @@
+﻿body
+{
+    background: #EFF2FB;
+    background-image: url(../mImage/LogBG.PNG);
+    background-repeat: repeat;
+    font-family: 'Lucida Sans' ,Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face
+{
+    font-family: 'mwFont';
+    src: url('../myFont/deliciousheavy.ttf'); /* IE9 Compat Modes */
+}
+
+.highlight
+{
+    text-decoration: none;
+    color: black;
+    background: yellow;
+}
+.page
+{
+    width: 1050px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 2px solid #496077;
+    border-radius: 8px;
+    min-height: 600px;
+}
+
+.header
+{
+    background-image: url(../mImage/header.PNG);
+    width: 99.8%;
+    border-radius: 5px 5px 0px 0px;
+    padding: 8px 0px 0px 3px;
+    box-shadow: #716E73 0px 3px 2px;
+    height: 130px;
+}
+
+
+.RoundMid
+{
+    box-shadow: #716E73 2px 2px 2px;
+    border-radius: 5px;
+}
+
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 99%;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 10px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    font-family: 'Lucida Grande';
+    font-size: 8pt;
+}
+
+.AdmImg
+{
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: #FF0000 2px 2px 2px;
+    margin-top: 80px;
+}
+
+div.header a
+{
+    text-decoration: none;
+}
+
+table
+{
+    width: 100%;
+    font-size: 9pt;
+}
+
+.spanCss
+{
+    font-size: 16pt;
+    font-family: 'mwFont' , sans-serif, 'Agency FB';
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.spanSubCss
+{
+    font-size: 12pt;
+    font-family: 'mwFont' , sans-serif, 'Agency FB';
+    padding: 10px;
+    color: #800000;
+}
+
+.spanmCss
+{
+    font-size: 10pt;
+    padding: 2px;
+}
+
+
+
+
+.Right
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.TopRMsg
+{
+    text-align: right;
+}
+
+.TopLMsg
+{
+    text-align: left;
+    font-family: "Lucida Grande" ,Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    padding-left: 50px;
+}
+
+.TopLSerMsg
+{
+    background-position: 25px 5px;
+    text-align: left;
+    font-family: "Lucida Grande" ,Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    padding-left: 50px;
+}
+
+.DivMsgBox
+{
+    width: 45%;
+}
+
+.info, .success, .warning, .error, .validation
+{
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.info
+{
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('info.png');
+}
+.success
+{
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('success.png');
+}
+.warning
+{
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('warning.png');
+}
+.error
+{
+    width: 45%;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../Image/error.png');
+}
+
+
+div.blockMsg
+{
+    background-color: #fff;
+    background-image: url(images/progress-indicator.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    height: 50px;
+    width: 270px;
+}
+
+
+
+
+/* Start CSS MyAdmin Page */
+
+div.adminfo a
+{
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.MyImage
+{
+    border-radius: 0px 5px 0px 5px;
+    box-shadow: #FF0000 1px 1px 1px;
+    margin-top: 1px;
+}
+
+.FavImage
+{
+    border-radius: 0px 8px 0px 8px;
+    box-shadow: #333333 3px 3px 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.FavImage:hover, IconImg:focus
+{
+    border-color: #800000;
+}
+div.adminfo a:hover, a:focus
+{
+    color: Red;
+}
+
+div.adminfo div.left
+{
+    float: left;
+    width: 300px;
+    min-height: 270px;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+
+
+div.adminfo div.Leftfav, div.fav
+{
+    float: left;
+    background-image: url('../mImage/about-school.png');
+    background-repeat: repeat;
+    width: 280px;
+    height: 35px;
+    text-align: left;
+    padding: 2px 0px 0px 20px;
+    font-size: 17pt;
+    font-family: 'mwFont' , sans-serif, 'Agency FB';
+    color: #FFFFFF;
+}
+
+
+div.adminfo div.right
+{
+    float: left;
+    margin: 5px;
+    width: 680px;
+    min-height: 270px;
+    border: 1px Solid #DAD8D9;
+    background-image: url('../mImage/bg-midSection.png');
+    background-repeat: repeat;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+div.adminfo div.fav
+{
+    width: 660px;
+}
+
+div.mData
+{
+    float: left;
+    padding: 5px;
+}
+/* Ends CSS MyAdmin Page */
+
+div.clear
+{
+    clear: both;
+}

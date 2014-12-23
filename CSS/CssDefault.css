@@ -1,0 +1,921 @@
+﻿@font-face
+{
+    font-family: 'mwFont';
+    src: url('../myFont/deliciousheavy.ttf'); /* IE9 Compat Modes */
+}
+
+
+@font-face
+{
+    font-family: 'fMenu';
+    src: url('../myFont/BuxtonSketch.ttf'); /* IE9 Compat Modes */
+}
+
+
+body
+{
+    background-color: #1E1E20;
+    font-family: Georgia,vardana, Helvetica, sans-serif;
+    background-image: url('../mImage/BgImage.JPG');
+    background-repeat: repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.scrollup
+{
+    width: 34px;
+    height: 34px;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../mImage/Scroll-To-Top.PNG');
+}
+
+#page
+{
+    width: 1000px;
+    padding: 0px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clear
+{
+    float: none;
+}
+
+div.mMenu
+{
+    float: right;
+    background-image: url('../mImage/mBar.png');
+    background-repeat: repeat-x;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    height: 50px;
+    width: 620px;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+div.mMenu a
+{
+    float: left;
+    text-decoration: none;
+    color: White;
+    font-family: 'fMenu' , Fallback, sans-serif;
+    font-size: 18pt;
+    padding: 13px;
+}
+
+div.mMenu a:hover
+{
+    color: Yellow;
+}
+div.mMenu img
+{
+    float: left;
+    text-decoration: none;
+}
+
+#mFirst
+{
+    padding-left: 15px;
+}
+
+div.TopTitle
+{
+    float: left;
+    padding-top: 8px;
+}
+
+div.TopTitle div.eName
+{
+    display: block;
+    float: left;
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 30pt;
+    color: #0EB9FF;
+    text-shadow: 2px 2px 2px #000;
+    font-variant: small-caps;
+}
+
+div.eName div.subTitle
+{
+    float: left;
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 15pt;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+div.TopTitle div.mAddress
+{
+    float: left;
+    margin-left: 40px;
+    background-image: url('../mImage/mAddress.png');
+    height: 102px;
+    width: 526px;
+}
+
+div.mAddress div.mAddDetails
+{
+    float: left;
+    margin-left: 190px;
+    padding: 6px;
+}
+
+div.secMid
+{
+    float: left;
+    margin-top: 15px;
+    width: 995px;
+    border: 3px Solid #FFFF00;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.mMidData
+{
+    float: left;
+    background-image: url('../mImage/bg-midSection.png');
+    width: 995px;
+}
+
+
+div.secMid span.wMsg
+{
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 30pt;
+    padding: 10px;
+    color: #D00000;
+    text-shadow: 2px 2px 2px #000;
+}
+
+div.secMid span.wMsgSubtitle
+{
+    font-size: 13pt;
+    padding: 10px;
+}
+
+div.midArea
+{
+    float: left;
+    width: 1000px;
+}
+
+div.midArea div.dLeft
+{
+    float: left;
+    padding: 10px;
+    margin: 20px 10px 10px 25px;
+    height: 400px;
+    width: 600px;
+    border: 1px Solid #DAD8D9;
+    background-image: url('../mImage/bg-midSection.png');
+    background-repeat: repeat;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+div.midArea div.dRight
+{
+    float: left;
+    padding: 10px;
+    margin: 20px 10px 10px 33px;
+    height: 400px;
+    width: 260px;
+    border: 1px Solid #DAD8D9;
+    background-image: url('../mImage/bg-midSection.png');
+    background-repeat: repeat;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+div.dLeft div.aSchool
+{
+    float: left;
+    background-image: url('../mImage/about-school.png');
+    background-repeat: repeat;
+    height: 43px;
+    width: 610px;
+    margin: -10px 0px 1px -10px;
+    color: White;
+    font-family: 'fMenu' , Fallback, sans-serif;
+    font-size: 25pt;
+    padding: 2px 0px 0px 10px;
+}
+
+div.dRight div.aMsg
+{
+    float: left;
+    background-image: url('../mImage/admin-msg.png');
+    background-repeat: no-repeat;
+    height: 43px;
+    width: 280px;
+    margin: -10px 0px 1px -10px;
+}
+
+
+
+div.dRight #ticker
+{
+    margin-top: -10px;
+    width: 260px;
+    height: 360px;
+    overflow: auto;
+}
+#ticker dt
+{
+    font: bold 10pt Georgia;
+    padding: 0 10px 5px 10px;
+    padding-top: 10px;
+    border-bottom: none;
+    border-right: none;
+    position: relative;
+}
+
+
+#ticker dd
+{
+    margin-left: 0;
+    text-align: justify;
+    font: normal 10pt Verdana;
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid #aaaaaa;
+    border-left: 1px solid #ffffff;
+    position: relative;
+}
+#ticker dd.last
+{
+    border-bottom: 1px solid #ffffff;
+}
+#ticker div
+{
+    margin-top: 0;
+}
+
+div.sData
+{
+    text-align: justify;
+}
+
+
+div.BottomUp
+{
+    float: left;
+    padding: 2px;
+    margin: 15px 10px 10px 30px;
+    height: 150px;
+    width: 920px;
+    border: 1px Solid #DAD8D9;
+    background-image: url('../Image/bg-midSection.png');
+    background-repeat: repeat;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.81);
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+div.BottomUp div.spLight
+{
+    float: left;
+    background-image: url('../mImage/about-school.png');
+    background-repeat: repeat;
+    width: 955px;
+    height: 40px;
+    margin: -15px 0px 1px -15px;
+}
+
+div.spLight span
+{
+    float: left;
+    font-family: 'fMenu' , Fallback, sans-serif;
+    font-size: 24pt;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #000;
+    color: #fff;
+    padding: 1px 1px 1px 20px;
+}
+
+div.mMidBottom
+{
+    float: left;
+    width: 995px;
+    height: 220px;
+    background-image: url('../mImage/bgBottom.png');
+    background-repeat: repeat;
+}
+
+div.mMidBottom div.mBLeft, div.mBMid, div.mBRight
+{
+    float: left;
+    height: 205px;
+    padding: 3px;
+}
+
+div.mMidBottom div.mBLeft
+{
+    margin-left: 25px;
+    width: 290px;
+}
+
+div.mMidBottom div.mBMid, div.mBRight
+{
+    margin-left: 15px;
+    width: 280px;
+}
+.mHeading
+{
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 15pt;
+    padding: 10px;
+}
+
+.mStMsg
+{
+    float: left;
+    margin-top: 5px;
+    font-size: 10pt;
+    text-align: justify;
+    padding: 6px;
+}
+
+.mStMsg img
+{
+    float: left;
+    height: 100px;
+}
+
+.mLineSpr
+{
+    float: left;
+    border-right: 1px #808080 dashed;
+    padding: 5px;
+    height: 200px;
+}
+
+
+div.mfArea
+{
+    float: left;
+    width: 280px;
+    height: 190px;
+    background-image: url('../mImage/bgBottom.png');
+    background-repeat: repeat;
+}
+
+div.BirthDays
+{
+    background-image: url('../mImage/birthday.gif');
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding-left: 25px;
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 15pt;
+}
+
+span.BStudent
+{
+    background-position: left top;
+    background-image: url('../mImage/Birthday_cake.png');
+    background-repeat: no-repeat;
+    padding: 1px 0px 1px 25px;
+    margin-left: 5px;
+    font-size: 10pt;
+}
+
+
+div.mMore a
+{
+    padding-top: 2px;
+    padding-right: 5px;
+    float: right;
+    font: Bold 9pt Georgia;
+    text-decoration: none;
+}
+
+div.mMore a:hover
+{
+    font-style: italic;
+    color: Orange;
+}
+
+div.mFooter
+{
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    color: White;
+    font-size: 8pt;
+}
+
+div.mFooter div.copyright
+{
+    float: left;
+    margin-top: 10px;
+}
+div.mFooter div.slink
+{
+    float: right;
+    margin-left: 30px;
+    width: 500px;
+    text-align: right;
+}
+
+/* End  Css For Home Page
+
+
+/* Start MODULE STYLES For About US Page
+--------------------------------------------------------- */
+
+div.mMidData div.prin_msg, div.aboutmsg
+{
+    float: left;
+}
+
+div.mMidData div.prin_msg
+{
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 300px;
+    text-align: justify;
+    font-size: 11pt;
+}
+
+div.mMidData div.aboutmsg
+{
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 620px;
+    text-align: justify;
+    font-size: 11pt;
+}
+
+
+div.ja-moduletable h3, div.moduletable h3
+{
+    margin: 0;
+    background: none;
+    text-indent: 10px;
+}
+
+div.ja-moduletable, div.moduletable
+{
+    padding: 0 0 10px;
+    position: relative;
+}
+
+div.ja-moduletable .ja-box-ct, div.moduletable .ja-box-ct
+{
+    padding: 10px 15px;
+}
+
+
+/* Rounded Module --- */
+div.ja-module h3, div.module h3
+{
+    margin: 0;
+    padding: 0 0 0 15px;
+    height: 30px;
+    line-height: 30px;
+    background: url(../mImage/h3-bg.gif) no-repeat left center #ccc;
+}
+
+div.ja-module h3 span, div.module h3 span
+{
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: url(../mImage/h3-bg.gif) no-repeat right center;
+    padding-right: 10px;
+}
+
+div.ja-module, div.module
+{
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ja-box-br
+{
+    background: url(../mimage/box-br.gif) no-repeat bottom right #fff;
+}
+
+.ja-box-bl
+{
+    background: url(../mimage/box-bl.gif) no-repeat bottom left;
+}
+
+.ja-box-tr
+{
+    background: url(../mimage/box-tr.gif) no-repeat top right;
+}
+
+.ja-box-tl
+{
+    background: url(../mimage/box-tl.gif) no-repeat top left;
+}
+
+div.ja-module .ja-box-ct, div.module .ja-box-ct
+{
+    padding: 10px 15px;
+}
+
+/* End  Css For About-us Page */
+
+
+/* Start  Css For Search Box */
+
+.TopRMsg
+{
+    text-align: right;
+}
+
+.TopLMsg
+{
+    text-align: left;
+    font-family: "Lucida Grande" ,Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    padding-left: 50px;
+}
+
+.TopLSerMsg
+{
+    background-position: 25px 5px;
+    text-align: left;
+    font-family: "Lucida Grande" ,Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    padding-left: 50px;
+}
+
+
+.header-search
+{
+    right: 0;
+    background: #1b5898;
+    background-image: -webkit-gradient(linear,left bottom,left top,from( #2e89ca),to( #1b5898));
+    background-image: linear-gradient( #2e89ca, #1b5898);
+    background-image: -moz-linear-gradient( #2e89ca, #1b5898);
+    background-image: -webkit-linear-gradient( #2e89ca, #1b5898);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 -2px 0 rgba(0,0,0,.5) inset,0 2px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 -2px 0 rgba(0,0,0,.5) inset,0 2px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,.5) inset,0 2px 0 rgba(0,0,0,.1);
+    padding: 5px 7px 7px;
+    width: 510px;
+}
+
+.header-search input[type="text"]
+{
+    border: 0;
+    float: left;
+    padding-left: 23px;
+    padding-right: 3px;
+    margin: 2px;
+    border: 1px solid #ddd;
+    border-radius: 0.4em;
+    font-family: "Lucida Grande" ,Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    height: 18px;
+    background-image: url('../mImage/search.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+
+.header-search input[type="text"]:focus
+{
+    background-image: url('../mImage/View.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #FFFFFF;
+}
+
+.header-search .button_search
+{
+    background: #84c63c url(../../img/icons/go-arrow.png?ad8fa66) center no-repeat;
+    background-image: url(../../img/icons/go-arrow.png?ad8fa66),-webkit-linear-gradient( #84c63c, #489615);
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: 0 1px rgba(0,0,0,.1),0 -2px rgba(0,0,0,.1) inset;
+    -moz-box-shadow: 0 1px rgba(0,0,0,.1),0 -2px rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 1px rgba(0,0,0,.1),0 -2px rgba(0,0,0,.1) inset;
+    margin-left: 4px;
+    font-family: 'Lucida Sans' ,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 27px;
+    width: 80px;
+}
+
+.header-search .button_search:focus, .button_search:hover
+{
+    color: #FFFF00;
+}
+
+/* End  Css For Search Box */
+
+
+.modal
+{
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    top: 100px;
+    width: 200px;
+    height: 45px;
+    font: bold 10pt 'Lucida Grande';
+    position: relative;
+    left: 40%;
+    padding: 5px 5px 5px 25px;
+}
+
+/* This gives us the styling for the background */
+.background
+{
+    background-color: black;
+    opacity: 90%;
+    filter: alpha(opacity=90);
+    background-color: rgba(0,0,0,0.90);
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+
+
+/* Start CSS For ContactUS */
+
+.cName
+{
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 25pt;
+    color: #0EB9FF;
+    text-shadow: 2px 2px 2px #000;
+    margin-left:5px;
+}
+
+.cAddress
+{
+    padding:5px;
+    margin-top:-25px;
+}
+.cPhone
+{
+    background-image: url('../mImage/Phone.png');
+    background-repeat: no-repeat;
+    height:30px;
+    margin-left:10px;
+    padding-left:35px;
+    font-size:20px;
+    font-weight:bolder;
+}
+
+.cMail
+{
+    margin-top:-20px;
+    background-image: url('../mImage/eMail.png');
+    background-repeat: no-repeat;
+    height:30px;
+    margin-left:10px;
+    padding-left:35px;
+    font-size:20px;
+    font-weight:bolder;
+}
+
+/* End CSS For ContactUS */
+
+
+/* Start CSS For Message */
+
+div.mMidData div.prin_msg, div.aboutmsg
+{
+    float: left;
+}
+
+
+div.mMidData div.pMessage
+{
+    float: left;
+    margin-left:5px;
+    text-align: justify;
+    font-size: 11pt;
+    padding:10px;
+}
+
+div.pMessage img
+{
+    float: left;
+    height:100px;    
+    padding:5px;
+    margin-right:15px;
+    border: 1px solid #39D;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px ;
+       
+   -webkit-box-shadow: #FF0000 2px 2px 2px;
+    -moz-box-shadow: #FF0000 2px 2px 2px;
+    box-shadow: #FF0000 2px 2px 2px;
+    
+    
+   
+}
+/* End CSS For Message */
+
+
+table
+{
+    font-size: 9pt;
+}
+td
+{
+    font-size: 9pt;
+    padding-left: 8px;
+    margin-left: 80px;
+}
+
+
+
+/* Start CSS Login Page */
+
+
+div.Login
+{
+    float:left;
+    background-image: url('../mImage/LogBG.png');
+    background-repeat: repeat;
+    padding:10px;
+    width: 975px;
+    height:400px;
+}
+
+div.LogOut
+{
+    float:left;
+    border: 10px solid #DCDCDC;
+    width: 535px;
+    height: 270px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background-image: url('../mImage/LogInnBG.png');
+    background-repeat: repeat;
+}
+
+
+div.LogOut div.LogBlue
+{
+    float:right;
+    width: 100px;
+    height: 270px;
+    background-image: url('../mImage/LogBlueBG.png');
+    background-repeat: repeat;
+}
+div.LogOut div.LogTitile
+{
+    float:left;
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 25pt;
+    color: #FFFFFF;
+    padding:15px 0px 0px 40px;
+}
+
+div.LogOut div.LogCtl
+{
+    float:left;
+    margin-top:20px;
+    width:410px;
+    padding:10px;
+}
+
+div.LogCtl span
+{
+    color:#FFFFFF;
+    float:left;
+    width:200px;
+}
+
+
+div.LogCtl select
+{
+    float:left;
+    padding:2px;
+    margin: 2px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Georgia,vardana, Helvetica, sans-serif;
+    font-size:11pt;
+}
+
+div.LogCtl select:hover, textarea:focus
+{
+    border-color: #c5c5c5;
+    background: #DDE9F7;
+}
+
+div.LogCtl input[type="text"]
+{
+    float:left;
+    padding:2px;
+    margin: 2px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Georgia,vardana, Helvetica, sans-serif;
+    font-size:11pt;
+}
+
+div.LogCtl input[type="text"]:hover, input[type="text"]:focus
+{
+    border-color: #c5c5c5;
+    background: #DDE9F7;
+}
+
+div.LogCtl input[type="password"]
+{
+    float:left;
+    padding:2px;
+    margin: 2px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Georgia,vardana, Helvetica, sans-serif;
+    font-size:11pt;
+}
+
+div.LogCtl input[type="password"]:hover, input[type="password"]:focus
+{
+    border-color: #c5c5c5;
+    background: #DDE9F7;
+}
+
+#txtUser_Name
+{
+    background-image: url('../mImage/LogUser.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 23px;
+}
+
+#txtPassword
+{
+    background-image: url('../mImage/LogPws.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 23px;
+}
+
+.button_Login
+{
+    border: 0px;
+    height: 40px;
+    width: 90px;
+    background: #F8CE06;
+    color: #fff;
+    font-family: 'mwFont' , Fallback, sans-serif;
+    font-size: 18pt;
+    
+    text-shadow: 2px 2px 2px #000;
+    
+    padding: 2px 3px 6px 3px;
+    
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    
+    -webkit-box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.81);
+    -moz-box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.81);
+    box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.81);
+}
+
+.button_Login:hover
+{
+    color: #666666;
+}
+/* End CSS For Login Page */

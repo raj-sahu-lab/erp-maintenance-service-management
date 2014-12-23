@@ -1,0 +1,135 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="AdminPage, App_Web_lzdpsiox" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Administrator Panel | Admin Block | Admin | Control Panel </title>
+    <link href="CSS/SuperAdminCss.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/FormControls.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/sGrid.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" href="CSS/menu.css" rel="stylesheet" />
+    <!-- The jQuery UI theme that will be used by the grid -->
+    <link rel="stylesheet" type="text/css" media="screen" href="themes/custom-theme/jquery.ui.all.css" />
+    <!-- The jQuery UI theme extension jqGrid needs -->
+    <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.jqgrid.css" />
+    <!-- jQuery runtime minified -->
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/trirand/i18n/grid.locale-en.js" type="text/javascript"></script>
+    <!-- The jqGrid client-side javascript -->
+    <script src="js/trirand/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script src="js/trirand/jquery.jqDatePicker.min.js" type="text/javascript"></script>
+    <script src="js/trirand/jquery.jqAutoComplete.min.js" type="text/javascript"></script>
+    <link href="CSS/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <table>
+                <tr>
+                    <td width="90%">
+                        <%--<div class="title">
+                            <asp:Label ID="lblmTitle" runat="server" Text=""></asp:Label>
+                        </div>--%>
+                    </td>
+                    <td width="13%" valign="middle">
+                        <asp:Image ID="imgSuperUser" runat="server" CssClass="AdmImg" Height="30px" Width="30px"
+                            ImageUrl="~/mImage/UserLogo.gif" />
+                        <a href="MyAdmin.aspx">
+                            <asp:Image ID="ImgHome" runat="server" CssClass="AdmImg" Height="30px" Width="30px"
+                                ImageUrl="~/mImage/home.jpg" AlternateText="Home" />
+                        </a><a href="LogOut.aspx">
+                            <asp:Image ID="Image1" runat="server" CssClass="AdmImg" Height="30px" Width="30px"
+                                ImageUrl="~/mImage/LogOut.jpg" AlternateText="Log Out" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="menu">
+            <ul class="menu">
+                <li class="parent"><a href="MyAdmin.aspx"><span>Home</span></a></li>
+                <li><a href="#" class="parent"><span>Masters</span></a>
+                    <ul>
+                        <li><a href="CentersDetails.aspx"><span>Company</span></a></li>
+                        <li><a href="UsersDetails.aspx"><span>Users</span></a></li>
+                        <li><a href="ClientDetails.aspx"><span>Hospital</span></a></li>
+                        <li><a href="EmployDetails.aspx"><span>Employee</span></a></li>
+                        <li><a href="DesginationDetails.aspx"><span>Designation</span></a></li>
+                        <li><a href="ManufactureDetails.aspx"><span>Manufacture</span></a></li>
+                        <li><a href="MachineriesDetails.aspx"><span>Equipment</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="parent"><span>Transaction</span></a>
+                    <ul>
+                        <li><a href="QuotationDetails.aspx"><span>Quotation</span></a></li>
+                        <li><a href="PurchaseOrderDetails.aspx"><span>Purchase Order</span></a></li>
+                        <li><a href="#" class="parent"><span>Invoices</span></a>
+                            <ul>
+                                <li><a href="Invoices.aspx?Mode=New"><span>New</span></a></li>
+                                <li><a href="InvoicesDetails.aspx"><span>View/Edit</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="AttendenceDetails.aspx"><span>Attendence</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Installation</span></a>
+                    <ul>
+                        <li><a href="Installation.aspx?Mode=New"><span>New</span></a></li>
+                        <li><a href="InstallationDetails.aspx"><span>View/Edit</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>AMC/CMA</span></a>
+                    <ul>
+                        <li><a href="AMCCMA.aspx?Mode=New"><span>New</span></a></li>
+                        <li><a href="AMCCMADetails.aspx"><span>View/Edit</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Call Types</span></a>
+                    <ul>
+                        <li><a href="CallServiceReport.aspx?Mode=New"><span>New</span></a></li>
+                        <li><a href="CallServiceReportDetails.aspx"><span>View/Edit</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Task</span></a>
+                    <ul>
+                        <li><a href="Task.aspx?Mode=New"><span>New</span></a></li>
+                        <li><a href="TaskDetails.aspx"><span>View/Edit</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Debit Note</span></a>
+                    <ul>
+                        <li><a href="DebitNote.aspx?Mode=New"><span>New</span></a></li>
+                        <li><a href="DebitNoteDetails.aspx"><span>View/Edit</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>Report</span></a>
+                    <ul>
+                        <li><a href="rptQuotation.aspx"><span>Quotation</span></a></li>
+                        <li><a href="rptPurchaseOrder.aspx"><span>Purchase Order</span></a></li>
+                        <li><a href="rptInstallation.aspx"><span>Installation</span></a></li>
+                        <li><a href="rptCallServiceReport.aspx"><span>Call Type's</span></a></li>
+                        <li><a href="rptTask.aspx"><span>Task</span></a></li>
+                        <li><a href="rptDebitNote.aspx"><span>Debit Notes</span></a></li>
+                    </ul>
+                </li>
+                <li class="last"><a href="LogOut.aspx"><span>Log Out</span></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © 2013-2014 | <a href="#">[Company Name]
+            Pvt. Ltd.</a>
+    </div>
+    </form>
+</body>
+</html>
