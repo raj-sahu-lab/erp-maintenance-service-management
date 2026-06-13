@@ -2,6 +2,7 @@
 *.dll
 *.exe
 *.pdb
+*.compiled
 
 # Database files
 *.mdf
@@ -14,6 +15,7 @@ Thumbs.db
 
 # Backups
 _db_backups/
+SE/Copy of*
 
 # Archives
 *.rar

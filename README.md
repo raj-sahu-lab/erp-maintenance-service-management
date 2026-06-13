@@ -2,6 +2,8 @@
 
 A field service management ERP handling AMC contracts, service calls, invoicing, purchase orders, installation tracking, employee attendance, and multi-center operations.
 
+> **Note:** This is a 2014 ASP.NET portfolio project. The core business logic is compiled into the included DLLs. Web.config values are placeholders — set actual connection strings and disable debug mode before deployment.
+
 ## Built: 2014
 
 ## Tech Stack
