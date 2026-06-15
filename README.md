@@ -1,4 +1,4 @@
-# Maintenance & Service Management — ERP System
+# Maintenance & Service Management — ERP System (2014)
 
 > **Built:** 2014 · ASP.NET 4.0 WebForms · C# · SQL Server
 >
@@ -80,7 +80,3 @@ A field service management ERP handling AMC contracts, service calls, invoicing,
 ## Note
 
 Deployed for a real field service company managing AMC contracts and service calls across multiple equipment installations. Handles the complete service lifecycle from quotation → installation → AMC → service calls → invoicing.
-
----
-
-© 2015 Raj Sahu
