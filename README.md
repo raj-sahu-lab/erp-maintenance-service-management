@@ -1,5 +1,9 @@
 # Maintenance & Service Management — ERP System
 
+> **Built:** 2014 · ASP.NET 4.0 WebForms · C# · SQL Server
+>
+> This project was built in 2014 as a production ERP for a maintenance and service business. The repository contains the deployed precompiled output (ASPX markup + compiled assemblies) rather than the original source — a common delivery format for on-premises .NET deployments of that era. Configuration has been updated (June 2026) with reduced connection pool sizing and deployment hardening.
+
 A field service management ERP handling AMC contracts, service calls, invoicing, purchase orders, installation tracking, employee attendance, and multi-center operations.
 
 > **Note:** This is a 2014 ASP.NET portfolio project. The core business logic is compiled into the included DLLs. Web.config values are placeholders — set actual connection strings and disable debug mode before deployment.
